@@ -1,0 +1,25 @@
+.wrapper {
+    background-color: var(--bg-sidebar-dark);
+    height: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color: #adb0b5;
+    padding: 12px 16px;
+    width: 100%;
+
+    &:hover {
+        color: pink;
+    }
+
+    & > span {
+        font-size: 1.6rem;
+    }
+}
+
+.active {
+    border-radius: 8px;
+    background-color: #262d2f;
+    color: #fd0d9d;
+}
