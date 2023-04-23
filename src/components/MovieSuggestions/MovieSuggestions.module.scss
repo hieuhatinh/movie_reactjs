@@ -1,0 +1,15 @@
+.movie {
+    border-radius: 16px;
+    color: white;
+    padding: 32px;
+    height: 100%;
+
+    .movie__title {
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .movie__summary {
+        font-size: 1.2rem;
+    }
+}
