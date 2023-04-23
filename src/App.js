@@ -1,7 +1,7 @@
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { Fragment } from 'react';
 
-import { publicRoutes } from '~/routes/routes';
+import { publicRoutes } from '~/routes';
 import DefaultLayout from '~/layouts';
 import ProtectedRoute from '~/components/routing/ProtectedRoute';
 
@@ -13,7 +13,10 @@ import ProtectedRoute from '~/components/routing/ProtectedRoute';
 function App() {
     return (
         <Router>
-            <div className="App">
+            <div
+                className="App"
+                style={{ backgroundColor: 'var(--bg-page-dark)', height: '100vh', color: 'var(--text-primary)' }}
+            >
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         const Page = route.component;

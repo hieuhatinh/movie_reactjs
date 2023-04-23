@@ -8,4 +8,5 @@
 .container {
     position: relative;
     left: var(--w-sidebar);
+    width: calc(100% - var(--w-sidebar));
 }

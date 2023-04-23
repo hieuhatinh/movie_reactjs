@@ -1,9 +1,11 @@
 import routes from '~/configs/routes';
 import History from '~/pages/History';
 import Home from '~/pages/Home';
+import Login from '~/pages/Login';
 import Profile from '~/pages/Profile';
 import Search from '~/pages/Search';
 import Setting from '~/pages/Setting';
+import Register from '~/pages/Register';
 
 const publicRoutes = [
     {
@@ -26,6 +28,14 @@ const publicRoutes = [
     {
         path: routes.search,
         component: Search,
+    },
+    {
+        path: routes.login,
+        component: Login,
+    },
+    {
+        path: routes.register,
+        component: Register,
     },
 ];
 
