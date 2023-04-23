@@ -31,4 +31,9 @@ export const sidebarItems = [
         to: routes.search,
         icon: <FontAwesomeIcon icon={faMagnifyingGlass} width={24} height={24} />,
     },
+    {
+        title: 'Đăng nhập',
+        to: routes.login,
+        icon: <FontAwesomeIcon icon={faMagnifyingGlass} width={24} height={24} />,
+    },
 ];

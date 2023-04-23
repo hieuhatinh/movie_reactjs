@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 
 function DefaultLayout({ children }) {
     return (
-        <div className="d-flex">
+        <div className="d-flex" style={{ height: '100%' }}>
             <nav className={cx('navbar')}>
                 <Sidebar />
             </nav>

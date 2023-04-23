@@ -4,6 +4,8 @@ const routes = {
     setting: '/setting',
     history: '/history',
     search: '/search',
+    login: '/login',
+    register: '/register',
 };
 
 export default routes;
