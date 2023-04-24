@@ -48,25 +48,31 @@ export const navigationHomeItems = [
     {
         title: 'All',
         image: popcorn,
+        to: routes.home,
     },
     {
         title: 'Comedy',
         image: emotions,
+        to: routes.comedyGenre,
     },
     {
         title: 'Fantasy',
         image: businessStrategy,
+        to: routes.fantasyGenre,
     },
     {
         title: 'Drama',
         image: sad,
+        to: routes.dramaGenre,
     },
     {
         title: 'History',
         image: book,
+        to: routes.historyGenre,
     },
     {
         title: 'Horror',
         image: happy,
+        to: routes.horrorGenre,
     },
 ];

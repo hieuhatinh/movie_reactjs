@@ -13,13 +13,19 @@ function Sidebar() {
                 <NavLink
                     key={item.title}
                     to={item.to}
-                    className={cx(
-                        'link',
-                        ({ isActive }) => (isActive ? 'active' : ''),
-                        'd-flex',
-                        'align-items-center',
-                        'my-2',
-                    )}
+                    className={cx('link', 'd-flex', 'align-items-center', 'my-2')}
+                    style={({ isActive }) => {
+                        let styles;
+                        if (isActive) {
+                            styles = {
+                                backgroundColor: '#262d2f',
+                                borderRadius: '8px',
+                                color: '#fd0d9d',
+                            };
+                        }
+
+                        return styles;
+                    }}
                 >
                     {item.icon}
                     <span className={cx('ms-1', 'mt-1')}>{item.title}</span>

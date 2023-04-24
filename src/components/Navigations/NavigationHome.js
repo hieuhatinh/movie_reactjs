@@ -11,7 +11,14 @@ function NavigationHome() {
         <div className="row">
             {navigationHomeItems.map((item) => (
                 <div className="col col-2">
-                    <NavLink className={cx('badge-pill', 'd-flex', 'justify-content-center', 'align-items-center')}>
+                    <NavLink
+                        key={item.title}
+                        to={item.to}
+                        className={cx('badge-pill', 'd-flex', 'justify-content-center', 'align-items-center')}
+                        style={({ isActive }) => {
+                            return { backgroundColor: isActive ? 'var(--primary)' : '' };
+                        }}
+                    >
                         <img src={item.image} alt={item.title} className="me-2" width={20} height={20} />
                         {item.title}
                     </NavLink>
